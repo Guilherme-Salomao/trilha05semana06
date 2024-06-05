@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Semana06.Modulos;
 
 namespace Semana06
 {
@@ -10,6 +6,9 @@ namespace Semana06
     {
         static void Main(string[] args)
         {
+            Menu menu = new Menu();
+            menu.ExibirLogo();
+            menu.ExibirMenu();
         }
     }
 }

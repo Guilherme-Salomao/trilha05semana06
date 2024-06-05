@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Modulos\Cliente.cs" />
+    <Compile Include="Modulos\Endereco.cs" />
+    <Compile Include="Modulos\Menu.cs" />
+    <Compile Include="Modulos\Produto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
