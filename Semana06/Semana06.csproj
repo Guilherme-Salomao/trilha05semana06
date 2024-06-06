@@ -43,9 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\ManutencaoProduto.cs" />
+    <Compile Include="Class\Eletronico.cs" />
+    <Compile Include="Class\Livro.cs" />
+    <Compile Include="Class\Menu.cs" />
+    <Compile Include="Class\ManutencaoLivro.cs" />
     <Compile Include="Modulos\Cliente.cs" />
     <Compile Include="Modulos\Endereco.cs" />
-    <Compile Include="Modulos\Menu.cs" />
     <Compile Include="Modulos\Produto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

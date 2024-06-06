@@ -8,8 +8,9 @@ namespace Semana06.Modulos
 {
     internal class Cliente
     {
-        string nome;
-        string cpf;
+       private string nome {get; set;}
+        string cpf {get; set;} 
+
         string email;
         string profissao;
         string telefone;

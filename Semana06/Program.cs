@@ -1,4 +1,5 @@
 ﻿using Semana06.Modulos;
+using Semana06.Class;
 
 namespace Semana06
 {

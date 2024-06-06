@@ -9,11 +9,19 @@ namespace Semana06.Class
 {
     internal class Livro : Produto
     {
-        String isbn;
-        int totalDePaginas;
+        public string ISBN { get; set; }
+        public int TotalDePaginas { get; set; }
 
-        public Livro(string nome) : base(nome)
+        //Construtor
+        public Livro(string nome, string isbn) : base(nome)
         {
+            ISBN = isbn;
         }
+
+        public string ObterDescricao()
+        {
+            return $"Nome do livro: {Nome}, ISBN: {ISBN}";
+        }
+
     }
 }
