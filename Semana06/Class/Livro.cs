@@ -1,9 +1,5 @@
 ﻿using Semana06.Modulos;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Semana06.Class
 {
@@ -13,7 +9,7 @@ namespace Semana06.Class
         public int TotalDePaginas { get; set; }
 
         //Construtor
-        public Livro(string nome, string isbn) : base(nome)
+        public Livro(string nome, string description, string isbn) : base(nome, description)
         {
             ISBN = isbn;
         }

@@ -1,29 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text.Json.Serialization;
 
 namespace Semana06.Modulos
 {
     internal class Produto
     {
-        private string nome;
-        private string descriao;
-        private double precoUnitario;
-        private int quantidade;
+        [JsonPropertyName("id")]
+        public int Codigo { get; set; }
+        [JsonPropertyName("title")]
+        public string Nome { get; set; }
+        [JsonPropertyName("description")]
+        public string Descricao { get; set; }
+        [JsonPropertyName("price")]
+        public double PrecoUnitario { get; set; }
+        public int Quantidade { get; set; }
 
-        // Propriedades públicas para acessar e modificar os atributos privados
-        public string Nome
-        {
-            get { return nome; }
-            set { nome = value; }
-        }
+        public Produto() { }
 
-        // Construtor que exige um nome
-        public Produto(string nome)
+        public Produto(string nome, string descricao)
         {
             Nome = nome;
+            Descricao = descricao;
         }
     }
 }
+

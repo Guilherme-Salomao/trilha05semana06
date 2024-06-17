@@ -25,7 +25,9 @@ namespace Semana06.Class
             string nomeLivro = Console.ReadLine();
             Console.WriteLine("\nDigite o ISBN: ");
             string isbnLivro = Console.ReadLine();
-            Livro livro = new Livro(nomeLivro, isbnLivro);
+            Console.WriteLine("\nDigite a Descrição do Livro: ");
+            string descricaoLivro = Console.ReadLine();
+            Livro livro = new Livro(nomeLivro, descricaoLivro, isbnLivro);
             livros.Add(livro);
             Console.WriteLine($"O livro: {nomeLivro}, com ISBN:  foi incluido com sucesso!");
             Console.WriteLine("Aperte qualquer tecla para voltar!");
